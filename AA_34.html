@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AA_34</title>
+        <script>
+            var product = prompt("Inserte un producto");
+            do{
+                
+                var price = Number(prompt("Inserte el precio del producto"));
+                var unit = Number(prompt("Inserte la cantidad de unidades del producto"));
+                if(!isNaN(price) || !isNaN(price)){
+                    document.write(product + ": " + unit + "unidades x " + price + "€ = " + unit * price + "€");
+                }
+                
+            }while(isNaN(price) && isNaN(unit)){
+                
+            }
+            
+        </script>
+       
+    </head>
+    <body>
+        
+    </body>
+</html>

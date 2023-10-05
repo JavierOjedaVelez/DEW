@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> AA_32</title>
+        <script>
+        var number = prompt("Introduzca un numero de telefono");
+       
+        const array = number.split("-");
+        if(array[0].length == 3 && array[1].length == 6 && array[2].length == 2){
+            var num = Number(array [1]);
+            var pref = Number(array[2]);
+            if(array[0][0] == "+" && !isNaN(num && !isNaN(pref))){
+                document.write(num);
+            }else{
+                document.write("El tipo de los datos no es correcto");
+            }
+        }else{
+            document.write("La longitud de los datos no es correcta");
+        }
+        </script>
+       
+    </head>
+    <body>
+        
+    </body>
+</html>
