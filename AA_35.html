@@ -5,7 +5,7 @@
         <title>AA_35</title>
         <script>
             var Sdate = prompt("Introduzca una fecha en formato dd/mm/yyyy:");
-            let fecha = Date(Sdate);
+            let fecha = new Date(Sdate);
             if(fecha instanceof Date && !isNaN(fecha)){
                 document.write("funciona");
             }else{
