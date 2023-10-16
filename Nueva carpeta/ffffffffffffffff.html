@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error</title>
+        <script>
+            
+            let name = prompt("Introduzca su nombre");
+            let age = prompt("Introduzca su edad");
+
+
+            function ValidName(name){
+                if(name == ""){
+
+                }else{
+                    return name;
+                }
+            }
+
+            function ValidAge(age){
+                if(isNaN(age) && age > 0){
+
+                }else{
+                    return age
+                }
+            }
+
+            function ValidarCampos(name, age){
+                let nombre =ValidName(name);
+                let edad = ValidAge(age);
+
+                return nombre &&  edad
+            }
+            
+            function info(code){
+                switch(code){
+                    case '1001':
+                        console.log("Error: No ha insertado un nombre");
+                        break;
+                    case '1002':
+                        console.log("Error: La edad insertada no es un numero o es menor que 0");
+                        break;
+                }
+            }
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
