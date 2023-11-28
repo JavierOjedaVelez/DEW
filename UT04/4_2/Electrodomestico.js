@@ -1,6 +1,7 @@
 class Electrodomestico{
   
 
+
     constructor(baseprice, colour, ec, weight){
         this.baseprice = baseprice;
         this.colour = colour;
@@ -22,7 +23,7 @@ class Electrodomestico{
      ComprobarColor(colour){
         const validcolour = ["blanco", "negro", "rojo", "azul","gris"];
         for(color in validcolour){
-            if(colour != validcolour[color]){
+            if(colour != validcolour[colour]){
                 colour = "blanco";
             }
         }
@@ -30,50 +31,27 @@ class Electrodomestico{
     }
     
      PrecioFinal(){
-            switch(this.letter){
-                case "A":
-                    if(80 <= this.weight){
-                    this.price = 100;
-                }else{
-                    this.letter = "B";
-                }
-                    
-                    break;
-    
-                case "B":
-                    if(50 <= this.weight <= 80){
-                        this.price = 80;
-                    }else if(80 < this.weight){
-                        this.letter = "A";
-                    }else{
-                        this.letter = "D";
-                    }
-                    
-                    break;
-    
-                case "D":
-                    if(20 <= this.weight <= 49){
-                        this.price = 50;
-                    }else if(49 < this.weight){
-                        this.letter = "B";
-                    }else{
-                        this.letter = "F";
-                    }
-    
-                    break;
-    
-                case "F":
-                    if(0 <= this.weight <= 19){
-                        this.price = 10;
-                        return this.price;
-                    }else{
-                        this.letter = "D";
-                        return this.letter;
-                    }
-                    
-    
-            }
-        }
+        let price;
+        let 
+        if (0 <= this.weight && this.weight <= 19) {
+            this.baseprice = this.baseprice + 10;
+            
+
+        }else if(20 <= this.weight && this.weight <= 49){
+
+            this.baseprice = this.baseprice + 50;
+                        
+        }else if(50 <= this.weight && this.weight <= 80){
+
+            this.baseprice = this.baseprice + 80;
+
+        }else{
+
+            this.baseprice =  this.baseprice + 100;
+
+        }        
+    }
+        
 
     ShowElectrodomestico(){
         document.write("Resumen:" + "<br>");
