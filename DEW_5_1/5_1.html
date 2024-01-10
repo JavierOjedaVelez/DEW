@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5_1</title>
+        <script src="Producto.js"></script>
+        <script src="Funciones.js"></script>
+    </head>
+    <body>
+        <form>
+            <label id="Formsearch"> Busqueda</label><br>
+            <label>Codigo de producto </label><input type="text" id="codfilter"><br>
+            <label>Nombre de producto </label><input type="text" id="namefilter"><br>
+            <button type='button' onclick="SearchProduct()">Buscar producto</button>
+            <hr>
+        </form>
+        <br><br>
+        <form>
+            <label id="Formpost"> Añadir producto</label><br>
+            <label>Codigo de producto </label><input type="text" id="code"><br>
+            <label>Nombre de producto </label><input type="text" id="name"><br>
+            <label>precio de producto </label><input type="text" id="price"><br>
+            <button type='button' onclick="createproduct()">Añadir producto</button>
+
+        </form>
+        <br>
+
+        <div id="result">
+        <script> CreateProductTable()</script>
+        </div>
+        <div id="searchresult">
+            
+        </div>
+    </body>
+
+</html>
