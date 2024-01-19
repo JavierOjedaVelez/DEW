@@ -1,12 +1,14 @@
 #cabecera{
     background-color: blue;
-    height:4vh ;
+    height:5vh ;
     width: 100% ;
     overflow: hidden;
 }
 
 #cuerpo{
     background-color: red;
+    height:50vh ;
+    width: 100% ;
 }
 
 #pie{
