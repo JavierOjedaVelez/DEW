@@ -1,0 +1,17 @@
+#cabecera{
+    background-color: blue;
+    height:4vh ;
+    width: 100% ;
+    overflow: hidden;
+}
+
+#cuerpo{
+    background-color: red;
+}
+
+#pie{
+    background-color: blue;
+    height:4vh ;
+    width: 100% ;
+    overflow: hidden;
+}
