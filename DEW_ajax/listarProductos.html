@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Examen Ajax</title>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script  src="app.js" defer></script>
+        <script src="./clases/Usuario.js"></script>
+        <script src="./clases/Productos.js"></script>
+        <script src="CRUD_Productos.js"></script>
+        
+    </head>
+    <body>
+        
+
+        <div id="cabecera" >
+            <div>
+                <strong>Homepage</strong>
+                <a href="listarProductos.html" >Productos</a>
+                <a href="CrearProducto.html">Añadir Producto</a>
+            </div>
+        </div>
+    
+     
+    
+    
+    
+        <section id="listaproductos" >
+            <script>ListProducts()</script>
+            <label id="resultados"></label>
+        </section>
+    </body>
+</html>
